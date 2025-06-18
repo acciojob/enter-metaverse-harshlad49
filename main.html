@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Enter Metaverse</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <p id="status">Enter the Metaverse</p>
+  <button id="enterBtn">Enter</button>
+
+  <script>
+    document.getElementById("enterBtn").addEventListener("click", function () {
+      const statusPara = document.getElementById("status");
+      statusPara.outerHTML = "<h1 id='status'>Entered Metaverse</h1>";
+    });
+  </script>
 
 </body>
-
 </html>
